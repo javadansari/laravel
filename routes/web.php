@@ -20,3 +20,6 @@ Route::get('/', function () {
   // dd($check);
     return view('index');
 });
+echo "salam";
+
+
