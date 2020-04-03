@@ -20,10 +20,8 @@
 
 <body>
 
-@section('navigation')
-    This is the master navigation.
-@show
 
+@include('layouts.navigation');
 
 <div class="container">
     {{--@yield('content')--}}
@@ -54,22 +52,18 @@
             </ul>
 
         </div>
-        @include('layouts.sidebar');
+        @section('sidebar')
+        @show
+
 
 
     </div>
-
-
-    <!-- Footer -->
-    @section('footer')
-        This is the master navigation.
-    @show
-
+</div>
+@include('layouts.footer')
 
 <!-- Bootstrap core JavaScript -->
 <script src="/vendor/jquery/jquery.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-</div>
 </body>
 
 </html>

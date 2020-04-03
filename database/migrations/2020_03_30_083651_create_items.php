@@ -20,6 +20,9 @@ class CreateItems extends Migration
             $table->text('content');
             $table->timestamps();
         });
+
+
+
     }
 
     /**
@@ -30,5 +33,6 @@ class CreateItems extends Migration
     public function down()
     {
         Schema::dropIfExists('items');
+
     }
 }

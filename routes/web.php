@@ -11,14 +11,7 @@
 |
 */
 
-use App\Item;
 
-Route::get('/', function () {
- //  $check = DB::table('items')->get();
-
-
-  // dd($check);
-    return view('index');
-});
+Route::get('/', 'itemsController@index');
 
 
